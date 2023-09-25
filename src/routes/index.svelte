@@ -1,5 +1,5 @@
 <script>
-	import successkid from 'images/successkid.jpg';
+	import smile from 'images/smile.jpg';
 </script>
 
 <style>
@@ -43,7 +43,7 @@
 <h1>Great success!</h1>
 
 <figure>
-	<img alt="Success Kid" src="{successkid}">
+	<img alt="Success Kid" src="{smile}">
 	<figcaption>Have fun with Sapper!</figcaption>
 </figure>
 
