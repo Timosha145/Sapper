@@ -24,12 +24,11 @@ export default {
 		input: config.client.input(),
 		output: config.client.output(),
 		plugins: [
-			copy({
+			copy(	{
 				targets: [{
 					src: 'node_modules/bootstrap/dist/**/*',
 					dest: 'static/vendor/bootstrap'
-				},
-				{
+				}, {
 					src: 'node_modules/jquery/dist/**/*',
 					dest: 'static/vendor/jquery'
 				}]
