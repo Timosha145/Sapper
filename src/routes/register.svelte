@@ -36,7 +36,7 @@
 
                 {#if error}
                     <div class="alert alert-danger" role="alert">{error}</div>
-                    {/if}
+                {/if}
 
                 <form on:submit|preventDefault={submit}>
                     <fieldset class="form-group">
