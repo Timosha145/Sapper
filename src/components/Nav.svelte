@@ -21,18 +21,6 @@
 		padding: 0 1em;
 	}
 
-	ul {
-		margin: 0;
-		padding: 0;
-	}
-
-	/* clearfix */
-	ul::after {
-		content: '';
-		display: block;
-		clear: both;
-	}
-
 	li {
 		display: block;
 		float: left;
