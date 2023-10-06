@@ -15,6 +15,7 @@
         // TODO handle network error
         error = response.error;
 
+
         if (response.id) {
             goto('/');
         }
