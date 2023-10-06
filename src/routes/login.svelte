@@ -1,9 +1,9 @@
 <script context="module">
-//	export async function preload({ params }, { token }) {
-//		if (token) {
-//			this.redirect(302, `/`);
-//		}
-//	}
+	export async function preload({ params }, { token }) {
+		if (token) {
+			this.redirect(302, `/`);
+		}
+	}
 </script>
 
 <script>
@@ -30,7 +30,7 @@
 </script>
 
 <svelte:head>
-	<title>Sign in • Conduit</title>
+	<title>Sign in • BestSiteEver</title>
 </svelte:head>
 
 <div class="auth-page">
@@ -48,7 +48,7 @@
 
 				<form on:submit|preventDefault={submit}>
 					<fieldset class="form-group">
-						<input class="form-control form-control-lg" type="text" required placeholder="Name" bind:value={username}>
+						<input class="form-control form-control-lg" type="text" required placeholder="Username" bind:value={username}>
 					</fieldset>
 					<fieldset class="form-group">
 						<input class="form-control form-control-lg" type="password" required placeholder="Password" bind:value={password}>

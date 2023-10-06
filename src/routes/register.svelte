@@ -49,7 +49,7 @@
                         <input class="form-control form-control-lg" type="password" required placeholder="Password" bind:value={password}>
                         {#if password.length > 1 && password.length < 6}
                             <sup><div class="alert alert-danger" role="alert">Password too short</div></sup>
-                            {/if}
+                        {/if}
                     </fieldset><br>
                     <button class="btn btn-lg btn-primary pull-xs-right" disabled={password.length < 6}>
                         Sign up

@@ -9,7 +9,7 @@
     async function logout()
     {
         await post('auth/logout');
-        $session.user = null;
+        $session.token = null;
         goto('/');
     }
 </script>
@@ -59,14 +59,12 @@
 		display: block;
 	}
 </style>
-
+{JSON.stringify($session)}
 <nav>
-	<ul>
 	{#if $session.token}
-        <li><a aria-current="{segment === 'logout' ? 'page' : undefined}" href="logout" on:click|preventDefault={logout}>log out</a></li>
+		<li><a aria-current="{segment === 'logout' ? 'page' : undefined}" href="{logout}" on:click|preventDefault={logout}>Logout</a></li>
 	{:else}
-        <li><a aria-current="{segment === 'login' ? 'page' : undefined}" href="login">Log in</a></li>
-		<li><a aria-current="{segment === 'register' ? 'page' : undefined}" href="register">register</a></li>
-    {/if}
-	</ul>
+		<li><a aria-current="{segment === 'register' ? 'page' : undefined}" href="register">Register</a></li>
+		<li><a aria-current="{segment === 'login' ? 'page' : undefined}" href="login">Login</a></li>
+	{/if}
 </nav>
